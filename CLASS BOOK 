@@ -1,0 +1,29 @@
+class Book:
+  """Represents a book with title, author, and year published."""
+
+  def __init__(self, title, author, year_published):
+    """Initializes a new Book object."""
+    self.title = title
+    self.author = author
+    self.year_published = year_published
+
+  def describe(self):
+    """Displays the book's details."""
+    print(f"Title: {self.title}")
+    print(f"Author: {self.author}")
+    print(f"Year Published: {self.year_published}")
+
+# Create three book objects
+book1 = Book("Harry Potter And The Sorcerer's Stone", "J.K Rowling", 2007)
+book2 = Book("The Lord Of The Rings Trilogy", "J.R.R.Tolkien", 1955)
+book3 = Book("Princess Of Diaries", "Meg Cabot", 2000)
+
+# Display their details
+print("Book 1:")
+book1.describe()
+
+print("\nBook 2:")
+book2.describe()
+
+print("\nBook 3:")
+book3.describe()
